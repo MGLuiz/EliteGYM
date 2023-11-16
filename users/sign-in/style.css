@@ -1,0 +1,127 @@
+main{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+main .loginPage-left{
+    width: 35%;
+    background-image: url(https://www.shutterstock.com/image-photo/modern-light-gym-sports-equipment-600nw-721723381.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+main .loginPage-left .opacityLayer{
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+main .loginPage-left .welcomeText{
+    font-size: 40px;
+    margin-bottom: -30px;
+}
+main .loginPage-left img{
+    width: 370px;
+}
+main .loginPage-right{
+    width: 65%;
+    background-color: #c80c0f;
+}
+
+
+main .loginPage-right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .loginPage-right .sign-in{
+    background-color: #fff;
+    width: 70%;
+    height: auto;
+    padding: 50px 60px;
+    box-shadow: 3px 3px 8px #2b2b2b;
+    border-radius: 30px;
+}
+.sign-in h2{
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-align: center;
+    color: #c80c0f;
+    text-shadow: 1px 1px 2px #2b2b2b;
+}
+
+.input-box{
+    position: relative;
+}
+.input-box:not(:last-child){
+    margin-bottom: 30px;
+}
+
+
+.input-box input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid #c80c0f;
+    outline: none;
+    color: #000;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+   
+}
+form .input-box:last-child{
+    width: 50%;
+    border: 1px solid #c80c0f;
+    background-image: linear-gradient(90deg, #2b2b2b, #c80c0f);
+    padding: 10px;
+    border-radius: 1000px;
+    margin: auto;
+    cursor: pointer;
+    transition: 0.5s;
+}
+form .input-box:last-child input{
+    color: #fff;
+    cursor: pointer;
+}
+form .input-box:last-child:hover{
+    box-shadow: 2px 2px 7px #2b2b2b;
+}
+
+.animedLabel{
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.input-box input:focus ~ .animedLabel,
+.input-box input:valid ~ .animedLabel{
+    margin-top: -20px;
+    font-size: 12px;
+}
+
+.input-box select{
+    padding: 5px;
+    outline: none;
+    border: 1px solid #c80c0f;
+    background-color: #2b2b2b;
+    color: #fff;
+    border-radius: 20px;
+    width: 30%;
+}
+#birthdate{
+    width: 30%;
+    margin-bottom: 20px;
+    padding: 5px;
+    border: 1px solid #c80c0f;
+    border-radius: 20px;
+    background-color: #2b2b2b;
+    color: #fff;
+}
