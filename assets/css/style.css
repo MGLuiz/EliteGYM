@@ -7,7 +7,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 120px;
+    height: 100px;
     width: 100%;
     background-color: rgb(43, 43, 43);
     border-bottom: 2px solid #c80c0f;
@@ -33,8 +33,8 @@ header .container{
     flex: 2;
 }
 .container .menu ul{
-    justify-content: center;
     display: flex;
+    justify-content: center;
 }
 
 .container .menu ul a li{

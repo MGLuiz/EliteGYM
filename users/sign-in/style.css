@@ -46,7 +46,7 @@ main .loginPage-right .sign-in{
     height: auto;
     padding: 50px 60px;
     box-shadow: 3px 3px 8px #2b2b2b;
-    border-radius: 30px;
+    border-radius: 10px;
 }
 .sign-in h2{
     margin-bottom: 30px;
