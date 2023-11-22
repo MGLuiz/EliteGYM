@@ -32,28 +32,43 @@ main .loginPage-left img{
 main .loginPage-right{
     width: 65%;
     background-color: #c80c0f;
-}
-
-
-main .loginPage-right{
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 main .loginPage-right .sign-in{
-    background-color: #fff;
+    background-color: #2b2b2b;
     width: 70%;
     height: auto;
     padding: 50px 60px;
     box-shadow: 3px 3px 8px #2b2b2b;
     border-radius: 10px;
 }
-.sign-in h2{
-    margin-bottom: 30px;
+
+.form-header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 40px;     
+}
+
+.form-header a{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.form-header a img{
+    width: inherit;
+    height: inherit;
+}
+
+ .sign-in .form-header h2{
     font-size: 40px;
     text-align: center;
-    color: #c80c0f;
-    text-shadow: 1px 1px 2px #2b2b2b;
+    color: #fff;
+    text-shadow: 1px 1px 2px #c80c0f;
+    margin-left: 60px;
 }
 
 .input-box{
@@ -62,14 +77,17 @@ main .loginPage-right .sign-in{
 .input-box:not(:last-child){
     margin-bottom: 30px;
 }
-
+.input-box label,
+.birthdateLabel{
+    color: #fff;
+}
 
 .input-box input{
     background: none;
     border: none;
-    border-bottom: 1px solid #c80c0f;
+    border-bottom: 2px solid #c80c0f;
     outline: none;
-    color: #000;
+    color: #fff;
     font-size: 15px;
     width: 100%;
     letter-spacing: 2px;
@@ -77,20 +95,20 @@ main .loginPage-right .sign-in{
 }
 form .input-box:last-child{
     width: 50%;
-    border: 1px solid #c80c0f;
-    background-image: linear-gradient(90deg, #2b2b2b, #c80c0f);
+    border: 2px solid #c80c0f;
     padding: 10px;
     border-radius: 1000px;
     margin: auto;
-    cursor: pointer;
     transition: 0.5s;
 }
-form .input-box:last-child input{
-    color: #fff;
+
+form .input-box:last-child:before,
+form .input-box:last-child:hover,
+.input-box select:hover,
+#birthdate:hover{
     cursor: pointer;
-}
-form .input-box:last-child:hover{
-    box-shadow: 2px 2px 7px #2b2b2b;
+    background-color: #c80c0f;
+    box-shadow: 2px 2px 7px #c80c0f;
 }
 
 .animedLabel{
@@ -102,7 +120,9 @@ form .input-box:last-child:hover{
 }
 
 .input-box input:focus ~ .animedLabel,
-.input-box input:valid ~ .animedLabel{
+.input-box input:hover ~ .animedLabel,
+.input-box input:valid ~ .animedLabel,
+.input-box.password .animedLabel{
     margin-top: -20px;
     font-size: 12px;
 }
@@ -110,18 +130,22 @@ form .input-box:last-child:hover{
 .input-box select{
     padding: 5px;
     outline: none;
-    border: 1px solid #c80c0f;
+    border: 2px solid #c80c0f;
     background-color: #2b2b2b;
     color: #fff;
     border-radius: 20px;
     width: 30%;
+    transition: 0.5s;
+    cursor: pointer;
 }
 #birthdate{
     width: 30%;
     margin-bottom: 20px;
     padding: 5px;
-    border: 1px solid #c80c0f;
+    border: 2px solid #c80c0f;
     border-radius: 20px;
     background-color: #2b2b2b;
     color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
 }
