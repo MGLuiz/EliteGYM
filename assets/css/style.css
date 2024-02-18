@@ -1,13 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+
 header{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    height: 90px;
     width: 100%;
     background-color: rgb(43, 43, 43);
     border-bottom: 2px solid #c80c0f;
@@ -47,6 +50,7 @@ header .container{
 
 }
 .container .menu ul a{
+    transition: .5s;
     text-decoration: none;
     border-bottom: 2px solid rgb(43, 43, 43);
 }
